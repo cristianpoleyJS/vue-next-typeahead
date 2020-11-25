@@ -1,4 +1,4 @@
-# vue-next-typeahead
+# delete-vue-typeahead
 
 ## Project setup
 ```
