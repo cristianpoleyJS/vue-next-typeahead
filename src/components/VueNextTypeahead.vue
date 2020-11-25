@@ -11,6 +11,9 @@
       class="vue-next-typeahead__wrapper-input"
       :class="{
         'vue-next-typeahead__wrapper-input--focusing': focusing
+      }"
+      :style="{
+        'background': searching || loadingParentComponent ? '#FAFAFA' : '#FFFFFF'
       }">
       <input
         type="text"
@@ -201,11 +204,11 @@ export default {
     },
 
     reset () {
-      this.$emit('reset')
+      this.showDropdown = false
       this.searching = false
       this.dataInput = ''
+      this.$emit('reset')
       this.$emit('update:input', '')
-      this.showDropdown = false
     }
   }
 }
@@ -304,13 +307,11 @@ export default {
     }
 
     &__dropdown {
-      background: #FFFFFF;
       border: 1px solid #D2D2D2;
       list-style: none;
-      margin: 0px;
       width: calc(100% - 2px);
       padding: 16px 0 0;
-      margin-top: -14px;
+      margin: -14px 0 0 0;
       max-height: 336px;
       overflow-y: auto;
 
@@ -355,6 +356,7 @@ export default {
       }
     }
 
+    // Responsive
     @media screen and (max-width: 768px) {
       width: 100%;
     }
