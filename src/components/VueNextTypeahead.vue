@@ -156,8 +156,8 @@ export default {
     changeInput (event) {
       if (event.target && event.target.value && event.target.value.length >= this.minChars) {
         this.search()
-        this.$emit('update:input', event.target.value)
       }
+      this.$emit('update:input', event.target.value)
       if (event.target && event.target.value.length === 0) {
         this.reset()
       }
@@ -204,6 +204,7 @@ export default {
       this.$emit('reset')
       this.searching = false
       this.dataInput = ''
+      this.$emit('update:input', '')
       this.showDropdown = false
     }
   }
