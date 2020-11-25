@@ -1,12 +1,22 @@
 {
   "name": "vue-next-typeahead",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "description": "Typeahead component done with Vue3",
+  "homepage": "https://github.com/cristianpoleyJS/vue-next-typeahead#readme",
+  "author": {
+    "name": "Cristian Poley",
+    "email": "cristianpoleygonzalez@gmail.com"
+  },
+  "main": "dist/vue-next-typeahead.common.js",
+  "module": "dist/vue-next-typeahead.umd.min.js",
+  "unpkg": "dist/vue-next-typeahead.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build --target lib --name vue-next-typeahead ./src/components/index.js",
+    "deploy": "npm run build && npm publish --access public"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -31,5 +41,30 @@
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/cristianpoleyJS/vue-next-typeahead/issues"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "vue3",
+    "vue-next",
+    "vue-typeahead",
+    "vue-next-typeahead",
+    "javascript-typeahead"
+  ],
+  "files": [
+    "dist/vue-next-typeahead.common.js"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:cristianpoleyJS/vue-next-typeahead.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
