@@ -10,9 +10,8 @@
 [![Version](https://img.shields.io/npm/v/vue-next-typeahead.svg)](https://github.com/cristianpoleyJS/vue-next-typeahead/)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Downloads](https://img.shields.io/npm/dt/vue-next-typeahead.svg)](https://github.com/cristianpoleyJS/vue-next-typeahead/)
-[![Dependencies](https://img.shields.io/david/cristianpoleyjs/vue-next-typeahead)](https://github.com/cristianpoleyJS/vue-next-typeahead/)
 
-## [Demo](https://codesandbox.io/s/interesting-kalam-5zkhh)
+## [Demo](https://5zkhh.csb.app/)
 
 ## Install
 
