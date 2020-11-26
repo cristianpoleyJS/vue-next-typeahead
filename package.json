@@ -1,6 +1,6 @@
 {
   "name": "vue-next-typeahead",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "Typeahead component done with Vue3",
   "homepage": "https://github.com/cristianpoleyJS/vue-next-typeahead#readme",
@@ -19,7 +19,6 @@
     "deploy": "npm run build && npm publish --access public"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
   "devDependencies": {
